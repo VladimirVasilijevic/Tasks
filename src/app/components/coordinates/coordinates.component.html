@@ -1,0 +1,26 @@
+<app-latitude></app-latitude>
+<hr>
+<app-longitude></app-longitude>
+<hr>
+
+<form #myForm="ngForm" (submit)="submitForm(myForm)" novalidate>
+
+  <div>
+    <input type="radio" checked value="current" name="weatherType" ngModel required>
+    <label for="current">current</label>
+  </div>
+
+  <div>
+    <input type="radio" value="forecast" name="weatherType" ngModel required>
+    <label for="forecast">forecast</label>
+  </div>
+
+  <div *ngIf="isSubmitted && myForm.invalid">
+    <p>Please select either value</p>
+  </div>
+
+  <button type="submit">OK</button>
+  <hr>
+
+  <app-data-view></app-data-view>
+</form>
