@@ -1,3 +1,12 @@
+# Tasks:
+
+## Task 1:
+
+Image of suggestion design for mobile device:
+![Image](mobile.png "mobile")
+
+## Task 2:
+
 # Weather
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
